@@ -5,7 +5,7 @@ export function TopLeftWhite() {
         <svg width='100%' height='100%'>
             <line x1="50%" y1="50%" x2="50%" y2="100%" stroke="black"/>
             <line x1="50%" y1="50%" x2="100%" y2="50%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -15,7 +15,7 @@ export function BottomLeftWhite() {
         <svg width='100%' height='100%'>
             <line x1="50%" y1="50%" x2="50%" y2="0%" stroke="black"/>
             <line x1="50%" y1="50%" x2="100%" y2="50%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -25,7 +25,7 @@ export function BottomRightWhite() {
         <svg width='100%' height='100%'>
             <line x1="50%" y1="50%" x2="0%" y2="50%" stroke="black"/>
             <line x1="50%" y1="50%" x2="50%" y2="0%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -35,7 +35,7 @@ export function TopRightWhite() {
         <svg width='100%' height='100%'>
             <line x1="50%" y1="50%" x2="0%" y2="50%" stroke="black"/>
             <line x1="50%" y1="50%" x2="50%" y2="100%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -45,7 +45,7 @@ export function LeftWhite() {
         <svg width='100%' height='100%'>
             <line x1="50%" y1="0%" x2="50%" y2="100%" stroke="black"/>
             <line x1="50%" y1="50%" x2="100%" y2="50%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -55,7 +55,7 @@ export function RightWhite() {
         <svg width='100%' height='100%'>
             <line x1="50%" y1="0%" x2="50%" y2="100%" stroke="black"/>
             <line x1="50%" y1="50%" x2="0%" y2="50%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -65,7 +65,7 @@ export function TopWhite() {
         <svg width='100%' height='100%'>
             <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="black"/>
             <line x1="50%" y1="50%" x2="50%" y2="100%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -75,7 +75,7 @@ export function BottomWhite() {
         <svg width='100%' height='100%'>
             <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="black"/>
             <line x1="50%" y1="50%" x2="50%" y2="0%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }
@@ -85,7 +85,7 @@ export function MiddleWhite() {
         <svg width='100%' height='100%'>
             <line x1="0%" y1="50%" x2="100%" y2="50%" stroke="black"/>
             <line x1="50%" y1="0%" x2="50%" y2="100%" stroke="black"/>
-            <circle cx="50%" cy="50%" r="35%" fill="white"/>
+            <circle cx="50%" cy="50%" r="35%" fill="#f8f8f8"/>
         </svg>
     );
 }

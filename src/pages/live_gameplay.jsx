@@ -2,41 +2,34 @@ import React from "react";
 import GoBoard from "../board/go_board";
 import { Text, Pressable } from "react-native";
 import { styles } from "./styles.js";
+import { emptyState, emptyStateHistory } from "../board/board_constants";
 import "./styles.css"
 
 export default function LiveGameplay() {
-    let state = [];
-    let state_history = [];
-    
-    for (let i = 0; i < 361; i++) {
-        state.push("E")
+    const [state, setState] = React.useState(emptyState);
+    const [stateHistory, setStateHistory] = React.useState(emptyStateHistory)
+    const [moveNum, setMoveNum] = React.useState(1);
+    const [moveInfo, setMoveInfo] = React.useState("White's turn");
+
+    // Sets tile on board (will disable later).
+    function handleBoardClick(index) {
+        let stateTmp = [...state];
+        let stateHistoryTmp = [...stateHistory];
+       
+        const tileColor = moveNum % 2 === 1 ? "W" : "B";
+        stateTmp[index] = tileColor;
+        stateHistoryTmp[index*2] = tileColor;
+        stateHistoryTmp[index*2+1] = moveNum;
+
+        setState(stateTmp);
+        setStateHistory(stateHistoryTmp);
+        setMoveNum(moveNum + 1);
+        setMoveInfo(moveInfo === "White's turn" ? "Black's turn" : "White's turn");
     }
 
-    state[10] = "W";
-    state[200] = "W";
-    state[69] = "W";
-    state[111] = "W";
-    state[112] = "W";
-
-    state[16] = "B";
-    state[9] = "B";
-    state[169] = "B";
-
-    for (let i = 0; i < 361; i++) {
-        state_history.push(["E", -1])
-    }
-
-    state_history[10] = ["W", 1];
-    state_history[200] = ["W", 3];
-    state_history[69] = ["W", 5];
-    state_history[111] = ["W", 7];
-
-    state_history[16] = ["B", 2];
-    state_history[9] = ["B", 4];
-    state_history[169] = ["B", 6];
-
+    // Download game to file system.
     function downloadGame() {
-        const blob = new Blob([state_history.toString()])
+        const blob = new Blob([stateHistory.toString()])
         const a = document.createElement("a");
         a.download = 'game.txt';
         a.href = URL.createObjectURL(blob);
@@ -50,8 +43,9 @@ export default function LiveGameplay() {
         <div className="go_div">
             <GoBoard
                 state={state}
+                handleBoardClick={handleBoardClick}
             />
-            <Text style={styles.game_text}>White's Turn</Text>
+            <Text style={styles.game_text}>{moveInfo}</Text>
             <div className="go_button">
                 <Pressable style={styles.button}
                     onPress={downloadGame} 
