@@ -7,26 +7,8 @@ import Select from 'react-select';
 
 export default function GameHistory() {
     const [displaySaved, setDisplaySaved] = React.useState(emptyBoard);
-     
-
     const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' },
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
-        { value: '1', label: '1'},
+        { value: '0', label: '0'},
     ];
     const [selectedOption, setSelectedOption] = React.useState(null);
 
@@ -80,6 +62,7 @@ export default function GameHistory() {
                             color: "white",
                             background: "#26211b",
                             borderRadius: "3px 3px 0 0",
+                            width: "210px",
                             borderColor: "#26211b",
                             boxShadow: null,
                             "&:hover": {

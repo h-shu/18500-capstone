@@ -3,19 +3,15 @@ import { BrowserRouter, Link } from "react-router-dom"
 
 export default function Navbar() {
     return (
-        < BrowserRouter>
- <nav className="nav">
+        <nav className="nav">
             <ul>
                 <li>
-                    <a href={`/`}>Live Gameplay</a>
+                    <Link to={`/`}>Live Gameplay</Link>
                 </li>
                 <li>
-                    <a href={`/game_history`}>Game History</a>
+                    <Link to={`/game_history`}>Game History</Link>
                 </li>
             </ul>
         </nav>
-        </BrowserRouter>
-       
-        
     );
 }
