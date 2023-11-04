@@ -1,0 +1,16 @@
+.go_board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 665px;
+    height: 665px;
+    background-color: #7f8167;
+}
+
+.tile {
+    width: 35px;
+    height: 35px;
+}
+
+.button {
+    size: 100px;
+}

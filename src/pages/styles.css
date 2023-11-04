@@ -1,0 +1,17 @@
+.go_div {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.button {
+    font-size: 100px;
+}
+
+.horizontal {
+    display: flex;
+    align-items: space-between;
+    gap: 20px;
+}

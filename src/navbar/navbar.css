@@ -1,0 +1,30 @@
+.nav {
+    background-color: #272522;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 33%;
+    padding-right: 33%;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav ul {
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav li:hover {
+    background-color: #555;
+}
+
+.nav li:active {
+    background-color: #555;
+}
